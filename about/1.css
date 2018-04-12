@@ -1,0 +1,31 @@
+#big-box{
+    background-color: lightblue;
+    height: 1100px;
+}
+
+#outter{
+/*    background-color: lightcoral;*/
+    height: 200px;
+    width: 50px;
+    position: relative;
+    top: 500px;
+    left: 300px;
+    animation: theSecondmove 5s forwards linear;
+}
+
+#inner{
+    background-color: lightsalmon;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation: mymove 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes mymove{
+    from{left: 0;top: 0;}
+    to{left: 0;top: 150px;}
+}
+@keyframes theSecondmove{
+    from{left: 300px;top: 500px;}
+    to{left: 1100px;top: 500px;}
+}

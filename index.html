@@ -7,9 +7,33 @@
     </head>
     <body>
         <div id="big-box">
-            <div id="outter">
+            <div id="one-outter">
                 <div id="inner"></div>
             </div>
+            <div id="two"></div>
+            <div id="loadtext">0%</div>
+            <div id="cover">加载完成</div>
         </div>
+
+        <script>
+
+            //进度条和计时器
+            var i=0;
+            function test(){
+                i++;
+                document.getElementById("loadtext").innerText = i + "%";
+                if(i<100) setTimeout("test()",100);
+            }
+            setTimeout("test()",100);
+            
+            //进度条判断动画是否停止并将覆盖层跳出
+            var e = document.getElementById("two");
+                e.addEventListener("animationend", function() {
+                    document.getElementById("cover").style.display = "block";
+                    alert("you're fired");
+                });
+                
+            </script>
+
     </body>
 </html>

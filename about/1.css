@@ -1,24 +1,51 @@
 #big-box{
-    background-color: lightblue;
+/*    background-color: lightblue;*/
     height: 1100px;
+    width: 1567px;
 }
 
-#outter{
+#one-outter{
 /*    background-color: lightcoral;*/
     height: 200px;
-    width: 50px;
+    width: 20px;
     position: relative;
     top: 500px;
     left: 300px;
-    animation: theSecondmove 5s forwards linear;
+    animation: theSecondmove 10s forwards linear;
 }
 
 #inner{
     background-color: lightsalmon;
-    height: 50px;
-    width: 50px;
+    height: 20px;
+    width: 20px;
     position: absolute;
-    animation: mymove 0.5s infinite alternate ease-in-out;
+    animation: mymove 0.7s infinite alternate linear;
+}
+
+#two{
+    background-color: lightseagreen;
+    height: 2px;
+    position:relative;
+    top: 400px;
+    left: 0;
+    animation: theThirdmove 10s forwards linear;
+}
+
+#loadtext{
+/*    background-color: lightpink;*/
+    position: absolute;
+    top: 650px;
+    left: 750px;
+    color: grey;
+}
+
+#cover{
+    display: none;
+    color: grey;
+    background-color: white;
+    position: absolute;
+    top: 650px;
+    left: 750px;
 }
 
 @keyframes mymove{
@@ -26,6 +53,10 @@
     to{left: 0;top: 150px;}
 }
 @keyframes theSecondmove{
-    from{left: 300px;top: 500px;}
-    to{left: 1100px;top: 500px;}
+    from{left: -20px;top: 500px;}
+    to{left: 1547px;top: 500px;}
+}
+@keyframes theThirdmove{
+    from{width: 0;}
+    to{width: 1567px;}
 }

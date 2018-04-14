@@ -7,10 +7,10 @@
     </head>
     <body>
         <div id="big-box">
-            <div id="one-outter">
+            <div id="one-outter"><!-- 跳的进度盒子-->
                 <div id="inner"></div>
             </div>
-            <div id="two"></div>
+            <div id="two"></div> <!-- 直线进度条-->
             <div id="loadtext">0%</div>
             <div id="cover">加载完成</div>
         </div>
@@ -30,7 +30,8 @@
             var e = document.getElementById("two");
                 e.addEventListener("animationend", function() {
                     document.getElementById("cover").style.display = "block";
-                    alert("you're fired");
+                    document.getElementById("inner").style.display = "none";
+                    alert("BOOM");
                 });
                 
             </script>

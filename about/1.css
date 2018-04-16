@@ -13,7 +13,7 @@
     position: relative;
     top: 500px;
     left: 300px;
-    animation: theSecondmove 10s forwards linear;
+    animation: theSecondmove 10s forwards linear paused;
 }
 
 #inner{
@@ -21,7 +21,8 @@
     height: 20px;
     width: 20px;
     position: absolute;
-    animation: mymove 0.7s infinite alternate linear;
+    animation: mymove 0.7s infinite alternate linear paused;
+    display: none;
 }
 
 #two{
@@ -30,7 +31,7 @@
     position:relative;
     top: 400px;
     left: 0;
-    animation: theThirdmove 10s forwards linear;
+    animation: theThirdmove 10s forwards linear paused;
 }
 
 #loadtext{

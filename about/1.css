@@ -1,5 +1,4 @@
 #big-box{
-/*    background-color: lightblue;*/
     height: 1100px;
     width: 1100px;
     margin: 0 auto;
@@ -7,7 +6,6 @@
 }
 
 #one-outter{
-/*    background-color: lightcoral;*/
     height: 200px;
     width: 20px;
     position: relative;
@@ -35,7 +33,6 @@
 }
 
 #loadtext{
-/*    background-color: lightpink;*/
     position: absolute;
     top: 650px;
     left: 550px;
